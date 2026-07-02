@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mubasshera S | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Mubasshera</div>
+        <div class="nav-links">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <a href="#contact" class="nav-cta">Contact Me</a>
+    </nav>
+
+    <section class="hero" id="hero">
+        <div class="hero-text">
+            <h1>Hi, I'm Mubasshera</h1>
+            <p class="hero-role">Aspiring AI Student <span class="dot">•</span> Future Computer Scientist</p>
+            <p class="hero-sub">
+                I build AI tools for people who get overlooked — offline soil-analysis models for farmers,
+                NLP for 250M+ Tamil speakers, and satellite systems to warn communities before disaster hits.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-image-frame" onclick="speakGreeting()">
+                <div class="tap-hint">🔊 Tap to say hi</div>
+                <img src="photo.jpg" alt="Mubasshera S">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I believe AI is the most powerful tool humanity has built to protect itself — from poverty,
+            exclusion, and disaster. I grew up watching farmers pay for soil tests they could barely
+            afford, and Tamil speakers navigate a digital world not built in their language. That's the
+            problem I've chosen to work on.
+        </p>
+        <p>
+            I'm from a Tamil Nadu government school, and everything I've built — an offline soil-analysis
+            CNN, Tamil NLP tools, satellite-based environmental monitoring — I built alone, after school
+            hours, in a borrowed lab, with no supervisor and no funding. I scored 83% in my Class XII
+            boards while working part-time, running free community workshops, and conducting
+            independent AI research.
+        </p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="card">
+            <h3>Higher Secondary Certificate — Class XII</h3>
+            <p class="date">Tirupattur District Government Model School, Tamil Nadu · 2025 – 2026 · 83%</p>
+            <p>
+                Selected for the Tamil Nadu Model School programme, reserved for the state's
+                highest-ranked students. Coursework: Mathematics, Physics, Computer Science, Economics.
+            </p>
+        </div>
+        <div class="card">
+            <h3>Secondary School Certificate — Class X</h3>
+            <p class="date">Sri Meenakshi Girls Government Higher Secondary School, Tamil Nadu · 2023 – 2024 · 83%</p>
+            <p>
+                Selected for Tamil Nadu Model School on merit. Led the Advanced Mathematics Club;
+                represented school in inter-school debates with the English Club and Debate Society.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <p class="skill-category">Programming</p>
+        <div class="skills-grid">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">SQL</span>
+        </div>
+
+        <p class="skill-category">ML / Deep Learning</p>
+        <div class="skills-grid">
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">Keras</span>
+            <span class="skill-tag">scikit-learn</span>
+            <span class="skill-tag">HuggingFace Transformers</span>
+        </div>
+
+        <p class="skill-category">Analytics & Math</p>
+        <div class="skills-grid">
+            <span class="skill-tag">Data Visualisation</span>
+            <span class="skill-tag">Dashboard Design</span>
+            <span class="skill-tag">Linear Algebra</span>
+            <span class="skill-tag">Probability & Statistics</span>
+            <span class="skill-tag">Optimisation</span>
+        </div>
+
+        <p class="skill-category">Platforms</p>
+        <div class="skills-grid">
+            <span class="skill-tag">Git/GitHub</span>
+            <span class="skill-tag">Jupyter Notebooks</span>
+            <span class="skill-tag">Google Colab</span>
+        </div>
+
+        <p class="skill-category">Languages</p>
+        <div class="skills-grid">
+            <span class="skill-tag">Tamil (native)</span>
+            <span class="skill-tag">Hindi (native)</span>
+            <span class="skill-tag">Urdu (native)</span>
+            <span class="skill-tag">English (professional)</span>
+            <span class="skill-tag">Malayalam (professional)</span>
+            <span class="skill-tag">Arabic (basic)</span>
+            <span class="skill-tag">Japanese (basic)</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Research & AI Projects</h2>
+
+        <div class="card">
+            <h3>Deep Learning-Based Soil Nutrient Profiling</h3>
+            <p class="date">Team Lead (5 members) · 2024 – 2025 · 1st Place, National Innovation & Technology Competition (600+ teams)</p>
+            <p>
+                Built and trained a CNN from scratch on 5,000+ field photographs I personally collected and
+                labelled — 91.4% classification accuracy on a held-out test set of 1,000+ images. Exported
+                the model to run fully offline on a basic Android phone, built for villages with no internet
+                where farmers pay ₹500 per lab test.
+            </p>
+            <a class="project-link" href="https://github.com/shera230325/soil-nutrient-cnn" target="_blank">GitHub: soil-nutrient-cnn →</a>
+        </div>
+
+        <div class="card">
+            <h3>NLP for Indic Languages — Transformer Fine-Tuning</h3>
+            <p class="date">Independent Research · 2024 – Present</p>
+            <p>
+                Fine-tuning Transformer models (HuggingFace) for Tamil and other Indic languages — 250M+
+                Tamil speakers currently have minimal access to functional NLP tools. Built a preprocessing
+                pipeline that automated repetitive annotation, significantly cutting manual labelling time.
+                Findings in preparation for submission to a student NLP workshop.
+            </p>
+            <a class="project-link" href="https://github.com/shera230325/Tamil-Indic-NLP" target="_blank">GitHub: Tamil-Indic-NLP →</a>
+        </div>
+
+        <div class="card">
+            <h3>Multi-Spectral Satellite Image Classification</h3>
+            <p class="date">Independent Project · 2023 – 2024</p>
+            <p>
+                Built a K-Means pipeline classifying land use and vegetation cover from public multi-spectral
+                satellite imagery across 12 zones — 87% average cluster coherence (silhouette scoring).
+                Three zones showed measurable tree-cover loss, forming the basis of my ongoing
+                environmental monitoring research.
+            </p>
+            <a class="project-link" href="https://github.com/shera230325/satellite-landcover-kmeans" target="_blank">GitHub: satellite-landcover-kmeans →</a>
+        </div>
+
+        <div class="card">
+            <h3>AI Business Intelligence Dashboard — Crop Price Forecasting (Tamil)</h3>
+            <p class="date">Independent Design Project · 2024 – 2025</p>
+            <p>
+                Designed a dashboard pulling real-time climate and soil data to generate crop price
+                forecasts for Tamil Nadu farmers and traders — output entirely in Tamil, as no
+                district-level tool in the local language previously existed.
+            </p>
+            <a class="project-link" href="https://github.com/shera230325/crop-price-dashboard-tamil" target="_blank">GitHub: crop-price-dashboard-tamil →</a>
+        </div>
+
+        <div class="card">
+            <h3>AI-Powered Earth Observation for Environmental Crisis Detection</h3>
+            <p class="date">Independent Research · 2026 – Present</p>
+            <p>
+                Analysing public satellite datasets over coal mining regions (Jharkhand, Chhattisgarh) to
+                detect underground coal fires and land subsidence using thermal anomaly and
+                interferometric analysis — working toward an early-warning system before communities
+                are displaced. Currently in dataset collection and exploratory analysis; initial findings
+                expected by end of 2026.
+            </p>
+            <a class="project-link" href="https://github.com/shera230325/coal-subsidence-reduction" target="_blank">GitHub: coal-subsidence-reduction →</a>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <h2>Achievements & Certificates</h2>
+        <div class="card">
+            <h3>🏆 1st Place — National Innovation & Technology Competition</h3>
+            <p class="date">2024 – 2025</p>
+            <p>Soil Nutrient CNN ranked first among 600+ teams nationwide.</p>
+        </div>
+        <div class="card">
+            <h3>Selected — ISRO Satellites and Space Technology Workshop</h3>
+            <p class="date">Class X</p>
+            <p>Chosen from a small group of students statewide for ISRO's hands-on programme.</p>
+        </div>
+        <div class="card">
+            <h3>1st Place — District-Level Astronomy Project Competition</h3>
+            <p class="date">2024 – 2025</p>
+        </div>
+        <div class="card">
+            <h3>Best Team Leader (×2) — Science Innovation Development Project (SIDP)</h3>
+            <p class="date">2022 – 2024</p>
+        </div>
+        <div class="card">
+            <h3>Merit Scholar — Tamil Nadu State Government Excellence Program</h3>
+            <p class="date">2024</p>
+        </div>
+        <div class="card">
+            <h3>First Prize — Regional Kumite Championship (Karate)</h3>
+            <p class="date">2025 · Represented at State Level</p>
+        </div>
+    </section>
+
+    <section id="leadership">
+        <h2>Leadership, Outreach & Community</h2>
+
+        <div class="card">
+            <h3>State Student Representative — Manerkani Mobile Educational Framework</h3>
+            <p class="date">Tamil Nadu State Government · 2025 – 2026</p>
+            <p>Elected to represent 10,000+ model school students across Tamil Nadu in state-level implementation decisions.</p>
+        </div>
+
+        <div class="card">
+            <h3>Student Workshop Organiser — AI, Data Science & Life Skills</h3>
+            <p class="date">Tirupattur District, Tamil Nadu · 2024 – 2026</p>
+            <p>
+                Ran 30+ free workshops reaching 300+ students — no fee, no prior knowledge needed, no
+                device required. Taught Python, AI basics, Hindi, and English. Mentored a student through
+                her Azim Premji University application — she received a full scholarship.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Founder & Lead — Kavalur Astrophysics Observatory Study Group</h3>
+            <p class="date">2024 – 2025</p>
+            <p>
+                Petitioned school leadership to approve the group; combined astronomy, data analysis, and
+                computational thinking. Grew to 200+ members across 10+ self-organised sessions.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Community AI Educator & Tutor</h3>
+            <p class="date">Independent, Tirupattur, Tamil Nadu · 2021 – Present</p>
+            <p>
+                Tutored 20+ students in mathematics, coding, and reasoning — ~80% improved their grades.
+                One student improved from 5/100 to 73/100 in her Class XII board re-exam.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-links">
+            <a href="mailto:mubassheras244@gmail.com">📧 mubassheras244@gmail.com</a>
+            <a href="tel:+916369842826">📱 +91 6369842826</a>
+            <a href="https://www.linkedin.com/in/mubasshera-s-14b558416" target="_blank">💼 LinkedIn</a>
+            <a href="https://github.com/shera230325" target="_blank">💻 GitHub</a>
+            <p>📍 Tirupattur, Tamil Nadu, India</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Mubasshera S. Built for MBZUAI application.</p>
+    </footer>
+
+    <script>
+        function speakGreeting() {
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                const msg = new SpeechSynthesisUtterance("Hi, I'm Mubasshera. Welcome to my portfolio!");
+                msg.rate = 0.95;
+                msg.pitch = 1.05;
+                window.speechSynthesis.speak(msg);
+            } else {
+                alert("Sorry, your browser doesn't support voice playback.");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
